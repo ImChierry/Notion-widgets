@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Cookie', sans-serif;
+			padding: px;
+			text-align: center;
+			margin: 10px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #e4c1f9;
+			text-decoration: none;
+			text-transform: normalcase;
+			display: inline-block;
+			padding: 10px;
+		}
+
+		.border {
+			border: 1.5px solid #e4c1f9;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #d0f4de;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border">
+		<a id="projects" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-star"style="color: #fcf6bd;"></i> Projects</a>
+		<a id="cleaning planner" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-seedling"style="color: #d0f4de;"></i> Cleaning Planner</a>
+		<a id="study" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-book"style="color: #ffb8d1;"></i> Study</a>
+		<a id="health" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-heart"style="color: #f48498;"></i> Health</a>
+		<a id="daily reflection" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-moon"style="color: #c8e7ff;"></i> Daily Reflection</a>
+		<a id="calendar" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-calendar-check"style="color: #b8f2e6;"></i> Calendar</a>
+
+
+
+	</nav>
+
+
+	<script>
+
+		let direction = "horizontal";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'projects')	
+window.open("https://www.notion.so/chierry/Projets-51844cf00fd8448c8d94ece5c6d67b95?pvs=4", '_blank').focus();
+			else if (id == "cleaning planner")
+window.open("https://www.notion.so/chierry/Cleaning-planner-5271a1dc74354a5dbd88f575fae434ac?pvs=4", '_blank').focus();
+			else if (id == "study")
+window.open("https://www.notion.so/chierry/Study-f748ca87c41f47ea8d88af57cab7c2a8?pvs=4", '_blank').focus();
+			else if (id == "health")
+window.open("https://www.notion.so/chierry/Health-8b04ac20990c498b99c92985439868b3?pvs=4", '_blank').focus();
+			else if (id == "daily reflection")
+window.open("https://www.notion.so/chierry/Daily-Reflection-e5e8d17f70c646bd86e04986d2c80099?pvs=4", '_blank').focus();
+			else if (id == "calendar")
+window.open("https://calendar.google.com/calendar/u/0/r", '_blank').focus();
+			
+
+		}
+	</script>
+
+
+</body>
+
+</html>
