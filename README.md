@@ -10,4 +10,4 @@ https://imchierry.github.io/Notion-widgets/travel-countdown-main
 
 https://imchierry.github.io/Notion-widgets/Hogwarts%20room/Hogwarts
 
-https://imchierry.github.io/Notion-widgets/Griffondor
+https://imchierry.github.io/Notion-widgets/Hogwarts%20room/Griffondor
